@@ -45,12 +45,12 @@
 
     &--nav-toggle{
         position: absolute;
-        top: 2.5rem;
+        top: 4rem;
         // left: 3rem;
-        left: 200px;
+        left: 300px;
         z-index: 2000;
-        width: 4rem;
-        height: 4rem;
+        width: 2rem;
+        display: none;
 
         @media only screen and (max-width: $bp-medium){
             display: none;
@@ -64,8 +64,6 @@
     }
         &--nav{
             display: none;
-
-
         }
         
     &-icon{
@@ -73,6 +71,12 @@
     height: 3rem;
 
     fill: var(--color-primary);
+
+    @media only screen and (max-width: $bp-small){
+        width: 3rem;
+        height: 3rem;
+
+    }
     }  
     &-icon2{
         width: 2.5rem;
