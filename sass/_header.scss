@@ -276,8 +276,8 @@
     border-radius: 50%;
     display: inline-block;
     position: relative;
-    left: 0rem;
-    top: 1.4rem;
+    left: 0;
+    top: 1.5rem;
     opacity: 0;
     display: none;
     z-index: 5000;
@@ -291,12 +291,10 @@
   }
 
   &__nav{
-    width: 100%;
+    width: 0;
     position: absolute;
     top: 0;
     left: 0;
-    
-    height: 100vh;
     z-index: 1;
 
     
@@ -304,14 +302,17 @@
 
   &__sidebar{
     width: 80%;
-    height: 100vh;
     background-color: var(--color-neutral);   
     
     &__nav{
-      padding-top: 10rem;
-      margin-left: 4rem;
+     
+      padding-left: 4rem;
+      margin-left: 0;
       display: flex;
 
+      &:first-child{
+        padding-top: 10rem;
+      }
     }  }
   }
 
@@ -379,10 +380,9 @@
   background: rgba(168, 168, 168, 0.664);
   display: inline-block;
   opacity: 1;
-  width: 80rem;
-  height: 100vh;
+  width: 85vh;
   position: absolute;
-  top: -.5rem;
+  top: -4rem;
   left: 0;
   
 }
