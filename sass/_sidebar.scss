@@ -1,0 +1,22 @@
+
+.side-bar__nav{
+    padding: 1rem 4rem 4rem;
+    font-weight: normal;
+  }
+  
+  .side-bar__nav:not(:last-child){
+    border-bottom: 1px solid var(--color-grey-light);
+  }
+
+  .side-bar__item{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  
+  .side-bar__item-number{
+    color: var(--color-grey-dark);
+  }
+
+  

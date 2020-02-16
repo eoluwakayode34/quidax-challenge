@@ -1,0 +1,78 @@
+
+//header section //////////////
+//////////////////////////////
+
+
+
+.section-side{
+  flex: 0 0 25%;
+  padding-top: 2rem;
+  box-shadow: .6rem 0 1rem rgba(177, 176, 176, 0.103);
+
+
+  @media only screen and (max-width: $bp-medium){
+    flex: 0 0 35%;
+  }
+
+  @media only screen and (max-width: $bp-small){
+    display: none;
+  }
+}
+
+ 
+.section-feature{
+  background: white;
+  flex: 0 0 73%; 
+  padding: 2rem 2rem 0 1rem;
+  
+
+  @media only screen and (max-width: $bp-small){    
+    flex: 0 0 100%;
+    margin: 0;
+  }
+
+
+
+}
+
+.feature-box{
+  margin: 0 0;
+  padding-left: .2rem;
+}
+.section-books{
+  
+  margin: 0;
+  padding: 0;
+}
+.section-books__box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem 2rem;
+
+  @media only screen and (max-width: 930px){
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+  @media only screen and (max-width: $bp-medium){
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  @media only screen and (max-width: $bp-small){
+    grid-template-columns: 1fr;
+  }
+
+  
+    
+  
+}
+
+.container{
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+

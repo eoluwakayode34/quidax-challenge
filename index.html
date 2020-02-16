@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quidax website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flickity.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+</head>
+<body>
+
+          
+        <input type="checkbox" class="mobile__search--nav" id="mobile__search">
+        <label for="mobile__search" class="mobile__search--nav-toggle">
+             <svg class="mobile__search-icon" >                
+                 <use xlink:href="img/sprite.svg#icon-search"></use>
+             </svg>   
+             <svg class="mobile__search-icon2" >                
+                <use xlink:href="img/sprite.svg#icon-arrow-left2"></use>
+            </svg>       
+        </label>
+        <form action="#" class="mobile__search--form">
+            <div class="mobile__search__nav">
+             <input type="text" name="search" placeholder="Search" class="mobile__search--input" id="mobile__search">
+             <label for="mobile__search" class="mobile--search__input__label">Olagundoye Emmanuel</label>
+            
+            <button class="mobile__search--icon-box">
+                 <svg class="mobile__search--icon" >                
+                     <use xlink:href="img/sprite.svg#icon-search"></use>
+                 </svg>
+            </button>
+        </div>
+        </form>
+        
+
+   <div class="header">
+
+          <div class="logo-box">
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+                <label for="navi-toggle" class="navigation__button">
+                    <svg class="mobile__menu--icon">
+                        <use xlink:href="img/sprite.svg#icon-menu"></use>
+                    </svg>
+                    <svg class="mobile__menu--icon2">
+                        <use xlink:href="img/sprite.svg#icon-arrow-left2"></use>
+                    </svg>
+                </label>
+
+                <div class="navigation-background">&nbsp;</div>
+
+                <div class="navigation__nav">
+                    <div class="navigation__sidebar">
+                        <div class="navigation__sidebar__nav">
+                            <div class="nav__logo">
+                                <svg class="nav__logo--icon">      
+                                    <use xlink:href="img/sprite.svg#icon-books"></use>    
+                                </svg>
+                                </div>
+                                <div class="nav__logo--name">
+                                    <h1 class="nav-heading">
+                                         <span class="nav-heading__main">Quidax Book Club</span>
+                                         <span class="nav-heading__sub">Admin</span>
+                                    </h1>               
+                                </div>   
+                        </div>
+    
+                        <div class="side-bar">
+                            <nav class="side-bar__nav">
+                                <h2 class="heading-secondary heading-secondary__green">Home</h2>
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">Profile</div>                            
+                                </div>
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name">Notification</div> 
+                                    <div class="side-bar__item-number uncheck-nofication">23</div>                           
+                                </div>
+                            </nav>
+                            <nav class="side-bar__nav">
+                                <h2 class="heading-secondary">Home</h2>                        
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">Book</div> 
+                                    <div class="side-bar__item-number p-small">273</div>                           
+                                </div>
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">Genres</div> 
+                                    <div class="side-bar__item-number p-small">42</div>                           
+                                </div>
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">Author</div> 
+                                    <div class="side-bar__item-number p-small">106</div>                           
+                                </div>
+                            </nav>
+                            <nav class="side-bar__nav">
+                                <h2 class="heading-secondary">My Book</h2>                        
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">Queued</div> 
+                                    <div class="side-bar__item-number p-small">273</div>                           
+                                </div>
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">Currently Borrowed</div> 
+                                    <div class="side-bar__item-number p-small">42</div>                           
+                                </div>
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">Favourites</div> 
+                                    <div class="side-bar__item-number p-small">106</div>                           
+                                </div>
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">History</div>                            
+                                </div>
+                            </nav>
+                            <nav class="side-bar__nav">
+                                <h2 class="heading-secondary">Admin</h2>                        
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">Book Requests</div> 
+                                    <div class="side-bar__item-number p-small">2</div>                           
+                                </div>
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">Member</div> 
+                                    <div class="side-bar__item-number p-small">34</div>                           
+                                </div>                       
+                                <div class="side-bar__item">
+                                    <div class="side-bar__item-name p-small">History</div>                            
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+           <div class="header__logo">
+            <svg class="logo-icon">      
+                <use xlink:href="img/sprite.svg#icon-books"></use>    
+            </svg>
+            </div>
+            <div class="logo-name">
+                <h1 class="logo-heading">
+                     <span class="logo-heading__main">Quidax Book Club</span>
+                     <span class="logo-heading__sub">Admin</span>
+                </h1>               
+            </div>               
+         
+       </div>
+
+       
+        <form action="#" class="search">
+            <div class="search__form">
+             <input type="text" name="search" placeholder="search book, genres, author. etc" class="search__input" id="search">
+             <label for="search" class="search__input__label">Olagundoye Emmanuel</label>
+            </div>
+            <button class="search-icon-box">
+                 <svg class="search-icon" >                
+                     <use xlink:href="img/sprite.svg#icon-search"></use>
+                 </svg>
+            </button>
+        </form>
+       
+       
+
+       <div class="user-nav">          
+               <svg class="user-nav-icon">
+                   <use xlink:href="img/sprite.svg#icon-books"></use>
+               </svg>
+           
+           <div class="user-nav__notification">
+               
+               <svg class="user-nav-icon">
+                   <use xlink:href="img/sprite.svg#icon-bell-o"></use>
+               </svg>
+               <span class="user-nav-icon__notification">3</span>
+           </div>
+
+           <div class="user-nav__img-box">
+               <img src="/img/popo.jpg" alt="popo admin" class="user-nav__img">
+           </div>
+       </div>
+   </div>
+
+       <div class="container">
+            <section class="section-side">
+                <div class="side-bar">
+                    <nav class="side-bar__nav">
+                        <h2 class="heading-secondary heading-secondary__green">Home</h2>
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">Profile</div>                            
+                        </div>
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name">Notification</div> 
+                            <div class="side-bar__item-number uncheck-nofication">23</div>                           
+                        </div>
+                    </nav>
+                    <nav class="side-bar__nav">
+                        <h2 class="heading-secondary">Home</h2>                        
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">Book</div> 
+                            <div class="side-bar__item-number p-small">273</div>                           
+                        </div>
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">Genres</div> 
+                            <div class="side-bar__item-number p-small">42</div>                           
+                        </div>
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">Author</div> 
+                            <div class="side-bar__item-number p-small">106</div>                           
+                        </div>
+                    </nav>
+                    <nav class="side-bar__nav">
+                        <h2 class="heading-secondary">My Book</h2>                        
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">Queued</div> 
+                            <div class="side-bar__item-number p-small">273</div>                           
+                        </div>
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">Currently Borrowed</div> 
+                            <div class="side-bar__item-number p-small">42</div>                           
+                        </div>
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">Favourites</div> 
+                            <div class="side-bar__item-number p-small">106</div>                           
+                        </div>
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">History</div>                            
+                        </div>
+                    </nav>
+                    <nav class="side-bar__nav">
+                        <h2 class="heading-secondary">Admin</h2>                        
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">Book Requests</div> 
+                            <div class="side-bar__item-number p-small">2</div>                           
+                        </div>
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">Member</div> 
+                            <div class="side-bar__item-number p-small">34</div>                           
+                        </div>                       
+                        <div class="side-bar__item">
+                            <div class="side-bar__item-name p-small">History</div>                            
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            <section class="section-feature"> 
+                <div class="feature-box">
+                    <h2 class="heading-secondary heading-feature">featured books</h2>
+                    <div class="book-slide">
+                        
+                       
+                        <div class="carousel" data-flickity='{ "cellAlign": "left",  "freeScroll": true }' >
+
+                           <div class="carousel-cell">
+                               <img src="/img/the lean startup.png" alt="the lean startup">
+                           </div>
+                           <div class="carousel-cell">
+                            <img src="/img/big magic.png" alt="big magic book">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="/img/effective engineer.png" alt="effective engineer">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="/img/effective python.png" alt="effective python">
+                        </div>
+                        <div class="carousel-cell">
+                            <img src="/img/built to last.png" alt="built to last">
+                        </div>
+                        </div>
+                          
+                    </div>
+                </div> 
+
+                <div class="section-books">
+                    <h2 class="heading-secondary heading-feature">recently added</h2>
+                    <div class="section-books__box">                        
+                        <div class="section-books__items">
+                            <img src="img/effective engineer.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/built to last.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/the lean startup.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/effective python.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/big magic.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div> 
+                
+                <div class="section-books">
+                    <h2 class="heading-secondary heading-feature"> all books</h2>
+                    <div class="section-books__box">                        
+                        <div class="section-books__items">
+                            <img src="img/effective engineer.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small feature-book__text">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/built to last.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/the lean startup.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/effective python.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/big magic.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="img/effective engineer.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/built to last.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/the lean startup.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/effective python.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="section-books__items">
+                            <img src="/img/big magic.png" alt="built to last books" class="feature-books">
+                            <div class="ml-small">
+                               <div class="books-available available">Available</div> 
+                               <h3>The Effective Engineer</h3>
+                               <p>
+                                   <span class="book-author">Edmond Lau-2009</span>
+                                   <span class="book-author">Motivational</span>
+                               </p>
+                               <div class="books-rating">
+                                    <div class="rating">
+                                        <div>Ratings: 4.0</div>
+                                        <div class="rating__star-box">
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star rated">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                            <svg class="rating__star">
+                                                <use xlink:href="img/sprite.svg#icon-star-full"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-users"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                                    <div class="rating__user">
+                                        <svg class="rating__user--icon">
+                                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                                        </svg>
+                                        <div>31</div>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div> 
+            </section>
+       </div>      
+   
+   
+   <script src="js/flickity-docs.min.js?2"></script>
+</body>
+</html>
