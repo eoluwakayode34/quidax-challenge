@@ -51,10 +51,10 @@
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2rem 2rem;
 
-  @media only screen and (max-width: 930px){
-    grid-template-columns: repeat(2, 1fr);
+ @media only screen and (max-width: $bp-tab){
+   grid-template-columns: repeat(2, 1fr) ;
+ }
 
-  }
   @media only screen and (max-width: $bp-medium){
     grid-template-columns: repeat(1, 1fr);
 
