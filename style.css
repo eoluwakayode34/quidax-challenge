@@ -346,7 +346,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2rem 2rem; }
-  @media only screen and (max-width: 930px) {
+  @media only screen and (max-width: 64rem) {
     .section-books__box {
       grid-template-columns: repeat(2, 1fr); } }
   @media only screen and (max-width: 50rem) {
