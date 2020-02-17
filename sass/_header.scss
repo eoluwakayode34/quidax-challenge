@@ -10,8 +10,7 @@
     box-shadow: 0 .6rem 1rem rgba(177, 176, 176, 0.103);    
     width: 100%;
     z-index: 12;
-    position: fixed;
-    position: relative;
+    position: sticky;
     padding-right: 4rem;
     padding-left: 4rem;
     // overflow:hidden  ;
@@ -241,7 +240,7 @@
 .navigation{
   font-size: 2rem;
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
@@ -277,7 +276,7 @@
     display: inline-block;
     position: relative;
     left: 0;
-    top: 1.5rem;
+    top: 0;
     opacity: 0;
     display: none;
     z-index: 5000;
@@ -292,7 +291,7 @@
 
   &__nav{
     width: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -302,7 +301,8 @@
 
   &__sidebar{
     width: 80%;
-    background-color: var(--color-neutral);   
+    background-color: var(--color-neutral);  
+     
     
     &__nav{
      
@@ -370,7 +370,7 @@
   transform: translateX(0);
   display: inline-block;
   opacity: 1;
-  width: 100%;
+  width: 56%;
   position: absolute;
   box-shadow: 5rem 0 20rem var(--color-primary);
   top: 0;
@@ -381,8 +381,8 @@
   background: rgba(168, 168, 168, 0.664);
   display: inline-block;
   opacity: 1;
-  width: 85vh;
-  position: absolute;
+  width: 80vh;
+  position: fixed;
   top: -4rem;
   left: 0;
   
@@ -401,5 +401,6 @@ opacity: 0;
 .navigation__checkbox:checked ~ .navigation__button .mobile__menu--icon2{
   display: block;
   opacity: 1;
+  
 }
 
