@@ -645,6 +645,7 @@ body {
   opacity: 1;
   width: 100%;
   position: absolute;
+  box-shadow: 5rem 0 20rem var(--color-primary);
   top: 0;
   left: 0; }
 
