@@ -9,7 +9,10 @@
   "author": "Olagundoye Emmanuel",
   "license": "ISC",
   "devDependencies": {
+    "jquery": "^3.4.1",
     "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "waypoints": "^4.0.1"
   }
-  
 }
