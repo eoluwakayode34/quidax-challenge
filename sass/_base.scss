@@ -7,6 +7,7 @@ $bp-small: 38.06rem;
     --color-primary: #000;
     --color-secondary:  #767676;
     --color-tertiary: #65C100;
+    
     --color-neutral: #fff;
     --color-grey-light: #DDDDDD;
     --color-grey-dark: #AAAAAA;
@@ -20,7 +21,7 @@ $bp-small: 38.06rem;
 
 html{
     box-sizing: border-box;
-    font-size: 62.5% ;
+    font-size: 65.5% ;
 
     @media only screen and (max-width: $bp-small) {
         font-size: 40%;

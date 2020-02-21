@@ -1,0 +1,39 @@
+
+
+.search__input:placeholder-shown + .search__drop{
+    display: none;
+    opacity: 0;
+}
+.search__input__label{
+    list-style-type: none;
+}
+
+
+.search__input__label li a{
+    text-decoration: none; 
+    color: var(--color-primary);   
+    padding: 2rem;
+    font-size: 1.4rem;
+    font-weight: 430;
+}
+
+.search__input__label li a span{
+    text-decoration: none; 
+    color: var(--color-grey-dark);     
+    font-size: 1.4rem;
+    font-weight: 430;
+}
+.search__input__label li{
+    background-color: var(--color-neutral);
+    padding: .8rem 0;
+   
+}
+
+.search__input__label li:hover{
+    background-color: rgb(240, 240, 240);
+    padding: 1.2rem 0;
+    color: var(--color-primary);
+    
+}
+
+
