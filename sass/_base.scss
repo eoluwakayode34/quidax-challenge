@@ -1,7 +1,7 @@
 $bp-tab: 64rem;
 $bp-large: 75.75rem;
 $bp-medium: 50rem;
-$bp-small: 38.06rem;
+$bp-small: 906px;
 
 :root{
     --color-primary: #000;
@@ -21,7 +21,7 @@ $bp-small: 38.06rem;
 
 html{
     box-sizing: border-box;
-    font-size: 65.5% ;
+    font-size: 64.5% ;
 
     @media only screen and (max-width: $bp-small) {
         font-size: 40%;
