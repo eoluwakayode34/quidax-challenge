@@ -3,6 +3,11 @@
     transform: translateX(0%);
     background: white;
     box-shadow: 20rem 0 rgba(#0000006e, .3);
+    display: none;
+
+    @media only screen and (max-width: $bp-small){
+        display: block;
+    }
 }
 
 
@@ -43,5 +48,10 @@
 
 .sidebar__toggle{
     padding: 1rem 4rem;
+    display: none;
+
+    @media only screen and (max-width: $bp-small){
+        display: block;
+    }
 
 }
