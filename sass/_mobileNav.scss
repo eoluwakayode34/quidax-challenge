@@ -1,7 +1,47 @@
 .navbar--open{
-    position: fixed;
-    top: 0;
     left: 0;
-    z-index: 20;
     transform: translateX(0%);
+    background: white;
+    box-shadow: 20rem 0 rgba(#0000006e, .3);
+}
+
+
+.sidebar-heading{
+    display: flex;
+    flex-direction: column; 
+    margin-left: 20px;
+
+    &__main{
+        font-size: 2rem;
+        font-family: inherit;
+        font-weight: bold;
+    }
+    &__sub{
+        font-size: 1.5rem;
+        font-family: inherit;
+    }
+}
+
+.side-bar__header{
+    display: flex;
+    padding: 2rem 5rem;
+    display: none;
+
+    @media only screen and (max-width: $bp-small){
+        display: block;
+        display: flex;
+    }
+}
+
+.backarrow-icon{
+    width: 4rem;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+
+}
+
+.sidebar__toggle{
+    padding: 1rem 4rem;
+
 }
