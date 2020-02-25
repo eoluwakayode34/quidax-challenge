@@ -1,0 +1,47 @@
+
+    
+
+.header__hamburger{
+    margin-right: 2rem;
+    top: 4px;
+    display: none;
+
+    @media only screen and (max-width: $bp-small){
+        display: block;
+    }
+}
+
+.header__hamburger span{
+    position: relative;
+    &,
+    &::before,
+    &::after{
+        background-color: var(--color-primary);
+        display: inline-block;
+    }
+
+
+    &::before,
+    &::after{
+        position: absolute;
+        left: 0;
+    }
+
+    &{
+        width: 4rem;
+        height: 2px;
+        }
+    &::before{
+        content: "";
+        width: 3rem;
+        height: 2px;
+        top: 1rem;
+    }
+    &::after{
+        content: "";
+        width: 3rem;
+        height: 2px;
+        top: -1rem;
+    }
+
+}
