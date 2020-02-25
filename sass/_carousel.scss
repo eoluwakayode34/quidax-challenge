@@ -1,0 +1,13 @@
+.carousel-cell{
+    position: relative;
+}
+
+.books-details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.607988) 0%, #000000 79.7%);
+    top: 0;
+    left: 0;
+    display: none;
+}
