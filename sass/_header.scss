@@ -11,6 +11,7 @@
     width: 100%;
     z-index: 12;
     position: sticky;
+    position: relative ;
    padding: 3rem 2.5rem 3rem 5rem;
     border-bottom: 1px solid var(--color-grey-light);
     // overflow:hidden  ;
@@ -84,7 +85,21 @@
 
  }
 
- &-icon{
+ &-search{
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0;
+  padding: 0;
+  margin-right: 3rem;
+  display: none;
+  opacity: 0;
+  @media only screen and (max-width: $bp-small){
+    display: block;
+    opacity: 1;
+  }
+}
+
+&-book, &-notification{
   height: 2.5rem;
   width: 2.5rem;
   margin: 0;
@@ -124,9 +139,9 @@
   color: var(--color-neutral);
   font-size: 12px;
   padding: 1.1rem;
-  width: 20px;
   font-weight: bold;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -148,32 +163,17 @@
  left: -1%;
   
 
-  @media only screen and (max-width: 609px){
-    flex: 0 0 30%;
-    margin: 0 auto;
-  }
+ 
   
   
+ $bp-medium: 50rem;
+ $bp-small: 906px;
   
-  @media only screen and (max-width: 884px){
-    flex: 0 0 45%;
-    margin: 0 auto;
-    
-  }
-
-  @media only screen and (max-width: $bp-medium){
-    flex: 0 0 40%;
-    margin: 0 auto;
-    
-  }
-
-  @media only screen and (max-width: $bp-small){
-    flex: 0 0 100%;
-    margin: 0 auto;
-    width: 100%;
-    display: none;
-    opacity: 0;
-  }
+ @media only screen and (max-width: $bp-small){
+  margin: 0 auto;
+  width: 100%;
+  display: none;
+}
 
   &-icon{
     fill: var(--color-grey-dark);
@@ -367,6 +367,11 @@
     font-family: inherit;
     font-weight: bold;
     transition: all .2s;
+    left: 0;
+
+    @media only screen and (max-width: $bp-small){
+      top: 200%;
+    }
   }
   
 .navigation__sidebar{
