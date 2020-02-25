@@ -2,7 +2,7 @@
     left: 0;
     transform: translateX(0%);
     background: white;
-    box-shadow: 20rem 0 rgba(#0000006e, .3);
+    box-shadow: 20rem 0 20rem rgba(#0000006e, .3);
     display: none;
 
     @media only screen and (max-width: $bp-small){
@@ -54,4 +54,28 @@
         display: block;
     }
 
+}
+
+.search-bar-open{
+    
+    @media only screen and (max-width: 906px){
+       
+        display: flex;
+        opacity: 1;
+        flex-basis: 100%;
+        padding: 0 4rem;
+        
+        // position: fixed;
+    }      
+
+}
+
+.search__toggle{
+    display: none;
+    margin-right: 4rem;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small){
+        display: flex;
+    }
 }
