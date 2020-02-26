@@ -14,7 +14,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 64.5%; }
+  font-size: 57.5%; }
   @media only screen and (max-width: 906px) {
     html {
       font-size: 40%; } }
@@ -400,18 +400,6 @@ body {
   display: flex;
   justify-content: space-between; }
 
-.carousel-cell {
-  position: relative; }
-
-.books-details {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.607988) 0%, #000000 79.7%);
-  top: 0;
-  left: 0;
-  display: none; }
-
 .heading-feature {
   letter-spacing: .3rem;
   text-transform: uppercase;
@@ -777,35 +765,6 @@ body {
   height: 100vh;
   overflow-y: scroll; }
 
-.heading-feature {
-  letter-spacing: .3rem;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 500;
-  border-bottom: 1px solid var(--color-grey-light);
-  margin: 0 0 3rem 0;
-  margin-top: 2rem; }
-
-/* books section */
-.section-books__items {
-  display: flex;
-  align-content: space-between;
-  font-weight: 500;
-  background: var(--color-neutral);
-  padding-right: 2rem;
-  border-radius: .4rem;
-  margin: .2rem; }
-  @media only screen and (max-width: 906px) {
-    .section-books__items {
-      font-size: 2rem; } }
-
-.section-books__items:hover {
-  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.15); }
-
-@media only screen and (max-width: 906px) {
-  .feature-books {
-    padding-right: 3rem; } }
-
 .reveal-item {
   opacity: 0;
   transition: opacity 1.5s ease-out; }
@@ -878,7 +837,6 @@ body {
     display: none; }
   .star-rating label {
     color: #bbb;
-    font-size: 22px;
     cursor: pointer;
     transition: color .3s ease-in-out; }
     .star-rating label i {
@@ -889,3 +847,115 @@ body {
     color: #f2b600; }
   .star-rating input[type='radio']:checked ~ label {
     color: #f2b600; }
+
+.carousel {
+  background-color: inherit;
+  height: 35rem; }
+
+.books-details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 0%, #000000 79.7%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: none;
+  transition: .8s ease-in-out; }
+
+.featured-book:hover .books-details {
+  display: block; }
+  @media only screen and (max-width: 906px) {
+    .featured-book:hover .books-details {
+      display: none; } }
+
+.featured-book {
+  box-shadow: 1rem 1rem 0.6rem rgba(138, 135, 135, 0.425);
+  background: inherit;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  height: 96%; }
+  .featured-book .star-rating label {
+    margin: 0;
+    padding: 0; }
+
+.book-title {
+  color: var(--color-neutral);
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem; }
+  .book-title-heading {
+    font-size: 2rem;
+    font-weight: bold; }
+  .book-title-description {
+    font-size: inherit; }
+  .book-title-year {
+    font-size: inherit; }
+
+.book-category {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-neutral);
+  margin-top: 2rem; }
+
+.rate {
+  color: var(--color-neutral);
+  font-weight: bold;
+  white-space: nowrap; }
+
+.featured-rating {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--color-neutral);
+  padding-right: .8rem;
+  margin-right: 10px; }
+
+.featured-rating__user {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 8px; }
+  .featured-rating__user--icon {
+    fill: white;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding: 0; }
+
+.rating-review {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem; }
+
+.mt-large {
+  margin-top: 2rem; }
+
+.mobile-featured-book {
+  width: 40px;
+  height: 40px;
+  background-color: #f5f0f0;
+  border-radius: 50%;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+  z-index: 700; }
+
+.mobile-featured-book-toggle {
+  display: block; }
+
+#book-details-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  top: 50%;
+  transform: translateY(50%);
+  opacity: 0;
+  fill: white; }
