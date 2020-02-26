@@ -44,3 +44,11 @@ document.querySelector('.search__toggle').addEventListener('click', function(){
 
 })
 
+
+// carousel for mobile
+
+document.querySelector('.mobile-featured-book').addEventListener('click', function(){
+
+   document.querySelector('.books-details').classList.toggle('mobile-featured-book-toggle');
+})
+
