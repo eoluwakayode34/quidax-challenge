@@ -23,10 +23,7 @@
 .featured-book:hover .books-details{
     display: block;
 
-    @media only screen and (max-width: $bp-small){
-        display: none;
     }
-}
 
 .featured-book{
     box-shadow: 1rem 1rem .6rem rgba(138, 135, 135, 0.425);
@@ -35,6 +32,7 @@
    display: flex;
    flex-direction: column;
    margin-right: 2rem;
+   position: relative;
   
    height: 96%;
     
@@ -115,34 +113,41 @@
 
 // mobile featured book
 .mobile-featured-book{
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     background-color: rgb(245, 240, 240);
     border-radius: 50%;
     position: absolute;
     top: 2rem;
     right: 2rem;
-    display: none;
-    z-index: 700;
+    
+    z-index: 20000;
+    justify-content: center;
+    align-items: center;
+    display:none;
+
+    @media only screen and (max-width: $bp-small){
+        display: flex;
+    }
 
     
    
 }
 
 .mobile-featured-book-toggle{
-    display: block;
-
+    display: flex;
+    z-index: 30000;
    
 }
 
 
-#book-details-toggle{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    top: 50%;
-    transform: translateY(50%);
-    opacity: 0;
-    fill: white;
-}
+// #book-details-toggle{
+//     position: absolute;
+//     width: 20px;
+//     height: 20px;
+//     margin: 0;
+//     top: 50%;
+//     transform: translateY(50%);
+//     opacity: 0;
+//     fill: white;
+// }
